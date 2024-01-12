@@ -1,0 +1,111 @@
+.project {
+  display: flex;
+  flex-direction: row;
+  margin: 40px 0;
+  &_purple {
+    p {
+      color: $purple !important;
+    }
+  }
+  &_grey {
+    color: $light;
+    opacity: 0.2;
+  }
+
+  &_background {
+    padding: 50px;
+    width: fit-content;
+    background-color: rgba(102, 42, 233, 0.308);
+    border-radius: 40%;
+    transition: all 0.4s ease-out;
+  }
+  &_info {
+    height: fit-content;
+    margin: auto 0px auto 40px;
+    h1 {
+      color: $purple;
+    }
+  }
+  &_tools {
+    opacity: 0.2;
+    margin-bottom: 10px;
+  }
+}
+.project_description {
+  transition: all 0.4s ease-out;
+}
+.project:hover {
+  .project_info {
+    h1 {
+      color: $light;
+    }
+  }
+  .project_description {
+    color: $purple;
+    transition: all 0.4s ease-out;
+  }
+  .pablo,
+  .pgm,
+  .sock,
+  .refuway,
+  .riness {
+    transform: scale(1.2);
+    transition: all 0.4s ease-out;
+  }
+  .project_background {
+    box-shadow: 0px 0px 15px 3px $light;
+    background-color: $purple;
+    transition: all 0.4s ease-out;
+    z-index: 1;
+  }
+}
+
+.dscribe,
+.refuway,
+.pablo,
+.riness,
+.pgm {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 112px;
+  height: 126.5px;
+  transition: all 0.4s ease-out;
+  z-index: 2;
+}
+
+.dscribe {
+  background-image: url("../../img/dscribe.png");
+}
+
+.refuway {
+  background-image: url("../../img/wizard.svg");
+}
+.pablo {
+  background-image: url("../../img/pablo.png");
+}
+.riness {
+  background-image: url("../../img/ring.png");
+}
+.pgm {
+  background-image: url("../../img/pgm.png");
+}
+.sock {
+  svg {
+    color: $light;
+    width: 112px;
+    height: 100%;
+  }
+  transition: all 0.4s ease-out;
+}
+
+@media screen and (max-width: 535px) {
+  .project {
+    text-align: center;
+    &_info {
+      margin: 0 auto;
+    }
+    &_background {
+      margin: 0 auto 10px auto;
+    }
+  }
+}

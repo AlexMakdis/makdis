@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px; /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: $purple; /* color of the thumb */
+}
+
+::-webkit-scrollbar-track {
+  background-color: $bg; /* color of the track */
+}
+
+/* Firefox */
+/* Note: Firefox currently only supports scrollbar styling on dark backgrounds */
+/* scrollbar-width is "thin", "auto", or "none" */
+/* scrollbar-color is "scrollbar-color thumb-color track-color" */
+/* You can use hexadecimal color codes or color names */
+/* For example: scrollbar-color: #888 #f1f1f1; */
+/*              scrollbar-color: red yellow; */
+/*              scrollbar-color: darkcyan darkslategray; */
+/*              scrollbar-color: #333 #555 transparent; */
+/*              scrollbar-color: rebeccapurple green; */
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+html {
+  background-color: $bg;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li,
+button,
+form,
+input {
+  font-family: sofia-pro, sans-serif;
+}
+p {
+  font-family: Roboto Mono, monospace;
+  color: $light;
+}
+
+.container {
+  padding: 0 50px;
+}
+
+.me {
+  z-index: -9999;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background-image: linear-gradient(270deg, #0e1212, rgba(14, 18, 18, 0) 90%),
+    linear-gradient(180deg, #0e1212, rgba(14, 18, 18, 0) 60%),
+    url("../../img/me.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+@media screen and (max-width: 1024px) {
+  .me {
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    background-image: linear-gradient(270deg, #0e1212, rgba(14, 18, 18, 0) 80%),
+      linear-gradient(0deg, #0e1212, rgba(14, 18, 18, 0) 60%),
+      url("../../img/me.jpg");
+    background-position: center;
+  }
+  .nav_container {
+    background: rgba(14, 18, 18, 0.247);
+  }
+}
+
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: none;
+}
+
+@media screen and (max-width: 700px) {
+  .nav_links {
+    flex-direction: column !important;
+  }
+  .nav_links_container {
+    flex-wrap: wrap;
+    li {
+      margin: 10px;
+      h1 {
+        font-size: 14px;
+      }
+    }
+  }
+}

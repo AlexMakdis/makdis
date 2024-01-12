@@ -1,0 +1,59 @@
+.about {
+  &_button {
+    button {
+      margin: 0;
+    }
+  }
+
+  &_intro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    a {
+      color: $purple;
+      width: fit-content;
+      transition: all 0.4s ease-out;
+    }
+    a:hover {
+      color: $light;
+      transition: all 0.4s ease-out;
+    }
+    svg {
+      margin-right: 10px;
+    }
+  }
+
+  &_title {
+    margin: 30px 0 20px 0;
+    h1 {
+      color: $light;
+      font-family: Roboto Mono, monospace;
+    }
+    hr {
+      max-width: 400px;
+      border-color: $purple;
+    }
+  }
+  &_skills {
+    margin: 20px 0;
+    &_container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+  }
+  &_me {
+    margin-top: 20px;
+    max-width: 42rem;
+  }
+}
+
+.download_cv {
+  height: fit-content;
+  margin: auto 10px auto 20px;
+}
+
+.comment {
+  opacity: 0.2;
+}
