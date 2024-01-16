@@ -101,6 +101,9 @@ a {
 }
 
 @media screen and (max-width: 700px) {
+  h1 {
+    font-size: 2em !important;
+  }
   .nav_links {
     flex-direction: column !important;
   }

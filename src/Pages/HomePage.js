@@ -34,7 +34,7 @@ function Home() {
             <div className="home_intro_container animate__animated animate__fadeInLeft">
               <p className="home_intro_name">Alex Makdis Afrim</p>
               <p className="home_intro_job">
-                Front-end developer{" "}
+                Full stack developer{" "}
                 <a
                   className="home_intro_link"
                   href="https://www.dscribedata.com/"
