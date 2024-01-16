@@ -8,7 +8,7 @@ function TimelineContent({ date, title, text }) {
   useEffect(() => {
     const options = {
       root: null, // use the viewport as the root
-      rootMargin: "-20% 0px -40% 0px",
+      rootMargin: "0px 0px -40% 0px",
       threshold: 0.5, // 0 to 1: percentage of the target element that must be visible to trigger the callback
     };
 
