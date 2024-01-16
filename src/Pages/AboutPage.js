@@ -65,7 +65,7 @@ function About() {
                   enthusiastic about coding.
                 </p>
               </div>
-              <div className="row" style={{ marginBottom: "100px" }}>
+              <div className="row">
                 <div className="about_title">
                   <h1>Tech skills</h1>
                   <hr />
