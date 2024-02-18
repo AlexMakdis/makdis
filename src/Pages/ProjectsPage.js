@@ -72,9 +72,6 @@ function Project() {
                 </div>
                 <div>
                   <a
-                    href="https://refuway.vercel.app/"
-                    rel="noreferrer"
-                    target="_blank"
                   >
                     <div className="project">
                       <div className="project_background">
@@ -96,9 +93,6 @@ function Project() {
                 </div>
                 <div>
                   <a
-                    href="http://riness.flywheelsites.com/"
-                    rel="noreferrer"
-                    target="_blank"
                   >
                     <div className="project">
                       <div className="project_background">
@@ -120,9 +114,6 @@ function Project() {
                 </div>
                 <div>
                   <a
-                    href="https://pgmgent-1920-students.github.io/eindwerk-AlexMakdis/"
-                    rel="noreferrer"
-                    target="_blank"
                   >
                     <div className="project">
                       <div className="project_background">
@@ -142,9 +133,6 @@ function Project() {
                 </div>
                 <div>
                   <a
-                    href="https://pgmgent-1920-students.github.io/case1-pgm-website-AlexMakdis/"
-                    rel="noreferrer"
-                    target="_blank"
                   >
                     <div className="project">
                       <div className="project_background">
@@ -163,7 +151,7 @@ function Project() {
                   </a>
                 </div>
                 <div>
-                  <a href="#" rel="noreferrer">
+                  <a>
                     <div className="project">
                       <div className="project_background">
                         <div className="sock">
@@ -176,8 +164,7 @@ function Project() {
                           // MongoDB / GrapghQl / Apollo / React{" "}
                         </p>
                         <p className="project_description">
-                          Online store to buy comfy socks!<br></br>Database
-                          disabled.{" "}
+                          Online store to buy comfy socks!<br/>
                         </p>
                       </div>
                     </div>
